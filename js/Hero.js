@@ -27,7 +27,7 @@ Game.Hero = function (myX, myY) {
     		ttype;
     	
     	// find out if we are 'inside' the world  		
-    	if (testX < 0 || testY < 0 || testX > 4 || testY > 4) {
+    	if (testX < 0 || testY < 0 || testX > 4 || testY > 4) { // if its a door and you dont have the key
     		return;
     	}
     	
@@ -40,7 +40,7 @@ Game.Hero = function (myX, myY) {
     		return;
     	} else if (ttype === 5) { //this is a key
     		tileToTest.changeTo(0); // key becomes floor
-    		Game.door.changeTo(0); // door becomes floor
+    		Game.door.changeTo(0); // change to an open door **
     	}
     	
     	// ok now we can move
