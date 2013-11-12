@@ -1,0 +1,8 @@
+#stage{
+    background-color: green;
+}
+
+#game-assets{
+    position: absolute;
+    left:-2000em;
+}

@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+        <title>Lights out game</title>
+        <link href="styles/lights-out.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="game">
+            <canvas id="stage" width="280" height="280">
+            </canvas> 
+            <div id="game-assets">
+                <img src="img/small-mushroom.png" alt="a picture of a mushroom" />
+                <img src="img/small-dark-mushroom.png" alt="another picture of a mushroom" />
+                <img src="img/grey-star.png" alt="a star" />
+                <img src="img/yellow-star.png" alt="another star" />
+            </div>
+        </div>
+        <!-- links to where-ever you keep your scripts -->
+        <script src="libs/createjs-2013.09.25.min.js"></script>
+        <!--<script src="libs/easeljs-0.6.1.min.js"></script>
+        <script src="libs/preloadjs-0.4.0.min.js"></script>
+        <script src="libs/tweenjs-0.5.0.min.js"></script> -->
+        
+        <script src="js/utils.js"></script>
+        <script src="js/mazegame.js"></script>
+        <script src="js/levels.js"></script>
+        <script src="js/input.js"></script>
+        <script src="js/Tile.js"></script>
+        <script src="js/Hero.js"></script>
+        
+    </body>
+</html>
+
